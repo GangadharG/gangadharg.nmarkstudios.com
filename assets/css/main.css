@@ -1,0 +1,201 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.nmark-container {
+}
+
+.nm-header {
+  height: 75px;
+  background-color: black;
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nm-h-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nm-h-logo-img {
+  width: 150px;
+  height: 72px;
+}
+
+.nm-header ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+ul li {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+ul li:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  width: 35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.open .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: black;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  height: calc(100vh - 50px);
+  width: 100%;
+}
+
+.mobile-menu li {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .nm-header {
+    padding: 0 20px;
+  }
+
+  .nm-h-menu nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+  }
+
+  .nm-header ul {
+    padding-top: 20px;
+  }
+
+  .mobile-menu li {
+    margin: 20px
+  }
+}
+
+/* Collage Start */
+
+.nm-collage-container {
+  padding-top: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .nm-collage-container {
+    padding-top: 12px;
+  }
+  .column {
+    flex: 50%;
+    max-width: 45%;
+  }
+}
+/* Collage End */
+
+/* Footer Start */
+.nm-footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.nm-f-part1 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.nm-f-social-outer {
+  display: flex;
+  align-items: center;
+}
+.nm-f-social-outer div {
+  padding-left: 12px;
+}
+.nm-social-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Footer End */
